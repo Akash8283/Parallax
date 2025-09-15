@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PARALLAX</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* ===== STARFIELD BACKGROUND ===== */
+      .starfield {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -5;
+        background: black;
+      }
+      .star {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background: white;
+        border-radius: 50%;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 🌌 STARFIELD -->
+    <div class="starfield"></div>
+    <!-- ===== HERO SECTION ===== -->
+    <header>
+      <video
+        id="heroVideo"
+        src="./wave.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+      <!-- Navbar -->
+      <nav>
+        <div class="logo">PARALLAX</div>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#scrollHeading">EFFECTS</a></li>
+          <li><a href="#roadmap">ROADMAP</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <!-- Hero Text -->
+      <div class="header-content">
+        <h1>KEEP MOVING</h1>
+        <p>Scroll down to see the parallax effect</p>
+      </div>
+    </header>
+    <!-- ===== PARALLAX SECTION ===== -->
+    <section id="home" class="parallax-section">
+      <div class="video-wrapper">
+        <video
+          id="parallaxVideo"
+          src="./fv-pc.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+      </div>
+      <h3>FORWARD</h3>
+    </section>
+    <!-- ===== IMAGES ===== -->
+    <section class="content">
+      <h1 id="scrollHeading" class="parallax-heading">3D PERSPECTIVE</h1>
+      <div class="parallax-images">
+        <img class="parallax-img" src="./images/image1.webp" alt="" />
+        <img class="parallax-img" src="./images/image3.webp" alt="" />
+        <img class="parallax-img" src="./images/image2.webp" alt="" />
+      </div>
+      <div class="parallax-images">
+        <img class="parallax-img" src="./images/image4.webp" alt="" />
+        <img class="parallax-img" src="./images/image6.webp" alt="" />
+        <img class="parallax-img" src="./images/image5.webp" alt="" />
+      </div>
+    </section>
+    <!-- ===== SCROLL TEXT ===== -->
+    <section class="scroll-text-section">
+      <h2 class="scroll-text">INNOVATION</h2>
+      <h2 class="scroll-text">TECHNOLOGY</h2>
+      <h2 class="scroll-text">FUTURE</h2>
+    </section>
+    <!-- ==== PARALLAX IMAGE GALLERY SECTION ==== -->
+    <section class="parallax-gallery">
+      <div class="gallery-item">
+        <img src="./images/image7.jpg" alt="Future Vision" />
+        <div class="overlay-text">FUTURE VISION</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/image8.jpg" alt="Innovation" />
+        <div class="overlay-text">INNOVATION</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/image9.jpg" alt="Technology" />
+        <div class="overlay-text">TECHNOLOGY</div>
+      </div>
+    </section>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <!-- ===== FUTURE VISION SECTION ===== -->
+    <section class="future-section">
+      <h1 class="future-title">OUR <span>FUTURE VISION</span></h1>
+      <div class="future-cards">
+        <div class="future-card">
+          <h2>🌍 Vision</h2>
+          <p>
+            We aim to build a connected digital world where ideas move faster
+            than time.
+          </p>
+        </div>
+        <div class="future-card">
+          <h2>💡 Innovation</h2>
+          <p>
+            Our drive is to innovate fearlessly, turning imagination into
+            real-world impact.
+          </p>
+        </div>
+        <div class="future-card">
+          <h2>🤖 Technology</h2>
+          <p>
+            Leveraging AI, IoT, and future tech to shape the world of tomorrow.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FUTURE ROADMAP SECTION ===== -->
+    <section id="roadmap" class="roadmap-section">
+      <h1 class="roadmap-title">🚀 Future Roadmap</h1>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h2>2025</h2>
+            <p>
+              Exploring new dimensions of <span>Innovation</span> and AI-driven
+              technology.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h2>2026</h2>
+            <p>
+              Building sustainable <span>Future Solutions</span> for global
+              challenges.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h2>2027</h2>
+            <p>
+              Integrating <span>Next-Gen Technologies</span> with real-world
+              impact.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== ABOUT / PARALLAX EFFECT SECTION ===== -->
+    <section id="about" class="about-section">
+      <div class="about-content">
+        <h1 class="about-title">ABOUT THE PARALLX EFFECT</h1>
+        <p>
+          The <strong>parallax effect</strong> is a modern web design technique
+          that creates an illusion of depth and movement by making background
+          elements move at a slower pace than the foreground content as you
+          scroll. Inspired by natural human perception, it adds a 3D-like
+          experience to flat screens, making websites feel more interactive and
+          immersive. By layering images, videos, or text at different speeds,
+          the parallax effect enhances storytelling, keeps users engaged, and
+          gives your site a sleek, futuristic vibe. It’s widely used in creative
+          portfolios, landing pages, and tech-driven websites to capture
+          attention and deliver a visually dynamic browsing experience.
+        </p>
+      </div>
+    </section>
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer id="contact" class="footer">
+      <div class="footer-content">
+        <h2 class="footer-logo">PARALLAX</h2>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Effects</a></li>
+          <li><a href="#">Roadmap</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer-text">© 2025 Parallax | All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- ===== JS ===== -->
+    <script>
+      // --- Variables ---
+      const heroVideo = document.getElementById("heroVideo");
+      const parallaxVideo = document.getElementById("parallaxVideo");
+      const heading = document.querySelector(".parallax-heading");
+      const galleryItems = document.querySelectorAll(".gallery-item");
+      const cards = document.querySelectorAll(".future-card");
+      const timelineItems = document.querySelectorAll(".timeline-item");
+      const scrollTexts = document.querySelectorAll(".scroll-text");
+      let ticking = false;
+
+      // --- 3D IMAGE PARALLAX (Event Listeners Added Only ONCE) ---
+      document.querySelectorAll(".parallax-img").forEach((img) => {
+        img.addEventListener("mousemove", (e) => {
+          const { width, height } = img.getBoundingClientRect();
+          const x = e.offsetX / width - 0.5;
+          const y = e.offsetY / height - 0.5;
+          img.style.transform = `rotateY(${x * 20}deg) rotateX(${
+            -y * 20
+          }deg) scale(1.1)`;
+        });
+        img.addEventListener("mouseleave", () => {
+          img.style.transform = "rotateY(0deg) rotateX(0deg) scale(1)";
+        });
+      });
+
+      // --- SCROLL HANDLER ---
+      function scrollHandler() {
+        let scrollY = window.scrollY;
+
+        // HERO VIDEO PARALLAX
+        heroVideo.style.transform = `translateY(${scrollY * 0.4}px)`;
+
+        // PARALLAX VIDEO SCALE
+        let section = document.querySelector(".parallax-section");
+        let sectionTop = section.offsetTop;
+        let sectionHeight = section.offsetHeight;
+        if (scrollY >= sectionTop && scrollY <= sectionTop + sectionHeight) {
+          let progress = (scrollY - sectionTop) / sectionHeight;
+          let scale = 0.5 + progress * 1.2;
+          parallaxVideo.style.transform = `scale(${scale})`;
+        }
+
+        // SCROLL TEXT ANIMATIONS (NO NESTED LISTENERS!)
+        scrollTexts.forEach((text, index) => {
+          const rect = text.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100 && rect.bottom > 0) {
+            setTimeout(() => text.classList.add("glow"), index * 400);
+          } else {
+            text.classList.remove("glow");
+          }
+        });
+
+        // HEADING FADE
+        if (heading) {
+          let headingTop = heading.offsetTop;
+          let fadePoint = headingTop - window.innerHeight / 2;
+          if (scrollY > fadePoint) {
+            let opacity = Math.max(0, 1 - (scrollY - fadePoint) / 300);
+            heading.style.opacity = opacity;
+            heading.style.transform = `translateY(${
+              (scrollY - fadePoint) * 0.2
+            }px)`;
+          }
+        }
+
+        // GALLERY PARALLAX
+        galleryItems.forEach((item) => {
+          const rect = item.getBoundingClientRect();
+          const img = item.querySelector("img");
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            img.classList.add("parallax-active");
+            item.classList.add("show");
+          } else {
+            img.classList.remove("parallax-active");
+            item.classList.remove("show");
+          }
+        });
+
+        // FUTURE CARDS
+        cards.forEach((card, index) => {
+          const rect = card.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            setTimeout(() => card.classList.add("show"), index * 200);
+          }
+        });
+
+        // TIMELINE
+        timelineItems.forEach((item) => {
+          const rect = item.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            item.classList.add("show");
+          }
+        });
+
+        ticking = false;
+      }
+
+      // --- Scroll with requestAnimationFrame ---
+      window.addEventListener("scroll", () => {
+        if (!ticking) {
+          window.requestAnimationFrame(scrollHandler);
+          ticking = true;
+        }
+      });
+
+      // --- Custom Cursor ---
+      const cursor = document.querySelector(".cursor");
+      const follower = document.querySelector(".cursor-follower");
+      let mouseX = 0,
+        mouseY = 0;
+
+      window.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        cursor.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+        follower.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+      });
+
+      // Extra effect on hover over links
+      document.querySelectorAll("a, button, .parallax-img").forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          cursor.style.transform += " scale(1.5)";
+          follower.style.transform += " scale(1.5)";
+        });
+        el.addEventListener("mouseleave", () => {
+          cursor.style.transform += " scale(1)";
+          follower.style.transform += " scale(1)";
+        });
+      });
+
+      // --- STARFIELD GENERATOR ---
+      const starfield = document.querySelector(".starfield");
+      const starCount = 150;
+      let stars = [];
+
+      for (let i = 0; i < starCount; i++) {
+        const star = document.createElement("div");
+        star.classList.add("star");
+        star.style.top = Math.random() * window.innerHeight + "px";
+        star.style.left = Math.random() * window.innerWidth + "px";
+        star.style.opacity = Math.random();
+        star.style.transform = `scale(${Math.random() * 1.5})`;
+        starfield.appendChild(star);
+        stars.push(star);
+      }
+
+      // Animate starfield on scroll
+      function updateStarfield() {
+        let scrollY = window.scrollY;
+        stars.forEach((star, index) => {
+          let speed = (index % 5) + 1;
+          star.style.transform = `translateY(${
+            scrollY * speed * 0.02
+          }px) scale(${Math.random() * 1.5})`;
+        });
+      }
+
+      window.addEventListener("scroll", updateStarfield);
+    </script>
+  </body>
+</html>
